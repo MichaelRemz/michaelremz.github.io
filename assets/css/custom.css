@@ -1,0 +1,350 @@
+/* =====================================================
+   Custom enhancements — Michael Remo Peña portfolio
+   On-theme additions (dark neumorphic, #ff014f accent)
+   ===================================================== */
+
+/* ---- Mobile header / menu logo fixes ---- */
+.header-style-2 .logo a img {
+    max-height: 50px;
+    width: auto;
+    border-radius: 50%;
+    border: 3px solid #32363b;
+    box-shadow: var(--shadow-1);
+}
+
+.header-style-2 .logo a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--color-heading);
+    text-decoration: none;
+}
+
+.popup-mobile-menu .inner .menu-top .menu-header .logo img {
+    max-height: 48px;
+    width: auto;
+    border-radius: 50%;
+}
+
+/* ---- Hero personal summary ---- */
+.hero-summary {
+    max-width: 620px;
+    margin: 28px auto 0;
+}
+
+.hero-summary p {
+    color: var(--color-lightn);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 575px) {
+    .hero-summary p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+.white-version .hero-summary p {
+    color: var(--color-body-white);
+}
+
+/* ---- Portfolio card enhancements ---- */
+.rn-portfolio .inner {
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    border-radius: 12px;
+    padding: 16px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rn-portfolio .inner:hover {
+    transform: translateY(-6px);
+}
+
+.rn-portfolio .inner .content .description {
+    color: var(--color-body);
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 12px 0 16px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tags span {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-lightn);
+    background: rgba(255, 1, 79, 0.08);
+    border: 1px solid rgba(255, 1, 79, 0.25);
+    padding: 4px 11px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* ---- Portfolio group headings ---- */
+.rn-portfolio-area .section-title.text-left .title {
+    font-size: 22px;
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+}
+
+.rn-portfolio-area .section-title.text-left .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 48px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--color-primary);
+}
+
+/* ---- Cloud & Infrastructure spotlight ---- */
+.cloud-spotlight {
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-1);
+    border-radius: 14px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cloud-spotlight::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--gradient-red-hover);
+}
+
+.cloud-spotlight-head .category-list a {
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.cloud-spotlight-head .title {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.cloud-spotlight-head .lead {
+    color: var(--color-body);
+    font-size: 16px;
+    line-height: 1.75;
+    max-width: 900px;
+    margin-bottom: 0;
+}
+
+.cloud-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 42px;
+}
+
+.cloud-pillar {
+    background: var(--background-color-2);
+    border-radius: 10px;
+    padding: 26px 24px;
+    box-shadow: var(--inner-shadow);
+    transition: transform 0.3s ease;
+}
+
+.cloud-pillar:hover {
+    transform: translateY(-5px);
+}
+
+.cloud-pillar .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 1, 79, 0.1);
+    margin-bottom: 16px;
+}
+
+.cloud-pillar .icon svg {
+    width: 22px;
+    height: 22px;
+    color: var(--color-primary);
+}
+
+.cloud-pillar h5 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: var(--color-heading);
+}
+
+.cloud-pillar p {
+    color: var(--color-body);
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
+.cloud-outcomes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 42px;
+    padding-top: 42px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cloud-outcomes .outcome {
+    text-align: center;
+}
+
+.cloud-outcomes .outcome .num {
+    display: block;
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.cloud-outcomes .outcome .label {
+    color: var(--color-lightn);
+    font-size: 13px;
+    line-height: 1.55;
+    display: block;
+}
+
+.cloud-stack {
+    margin-top: 38px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.cloud-stack .stack-label {
+    color: var(--color-lightn);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 6px;
+}
+
+.cloud-stack .tech-tags {
+    flex: 1;
+    min-width: 240px;
+}
+
+@media only screen and (max-width: 991px) {
+    .cloud-pillars,
+    .cloud-outcomes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .cloud-spotlight {
+        padding: 30px 22px;
+    }
+    .cloud-spotlight-head .title {
+        font-size: 24px;
+    }
+    .cloud-pillars,
+    .cloud-outcomes {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- White version: cloud spotlight ---- */
+.white-version .cloud-spotlight {
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+}
+
+.white-version .cloud-spotlight-head .title,
+.white-version .cloud-pillar h5 {
+    color: var(--color-heading-wv);
+}
+
+.white-version .cloud-spotlight-head .lead,
+.white-version .cloud-pillar p {
+    color: var(--color-body-white);
+}
+
+.white-version .cloud-pillar {
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+}
+
+.white-version .cloud-outcomes {
+    border-top-color: #dce1e4;
+}
+
+.white-version .cloud-outcomes .outcome .label {
+    color: var(--color-body-white);
+}
+
+/* ---- Resume: experience detail list ---- */
+.resume-single-list .description ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 12px;
+}
+
+.resume-single-list .description ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    color: var(--color-body);
+    line-height: 1.6;
+}
+
+.resume-single-list .description ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(255, 1, 79, 0.15);
+}
+
+/* ---- Certifications ---- */
+.certification-list {
+    margin-top: 50px;
+}
+
+.cert-meta {
+    display: block;
+    color: var(--color-primary);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* ---- White version adjustments ---- */
+.white-version .rn-portfolio .inner {
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+}
+
+.white-version .rn-portfolio .inner .content .description {
+    color: var(--color-body-white);
+}
