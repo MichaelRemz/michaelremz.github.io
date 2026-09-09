@@ -1,660 +1,331 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Michael Remo Peña - Full Stack Developer &amp; AWS Cloud Administrator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Michael Remo Peña - Full Stack Developer and AWS Cloud / DevOps Administrator with 4+ years of experience building and operating production web applications.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Remo Peña | Full-Stack Engineer &amp; AWS Infrastructure</title>
+    <meta name="description"
+        content="Full-Stack Engineer building and operating production systems across Laravel/CodeIgniter, PHP, MySQL, REST APIs, AWS infrastructure, and production operations.">
     <meta name="author" content="Michael Remo Peña">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="assets/css/plugins/feature.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f5f7f4">
+    <link rel="canonical" href="https://michaelremz.github.io/">
+    <link rel="icon" href="assets/images/favicon.ico" sizes="any">
+    <link rel="preload" as="image" href="assets/images/remo-portrait.webp" type="image/webp">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michaelremz.github.io/">
+    <meta property="og:site_name" content="Michael Remo Peña — Engineering Portfolio">
+    <meta property="og:title" content="Michael Remo Peña | Full-Stack Engineer &amp; AWS Infrastructure">
+    <meta property="og:description"
+        content="I build, deploy, and operate production systems end to end—from application code and databases to AWS infrastructure.">
+    <meta property="og:image" content="https://michaelremz.github.io/assets/images/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Michael Remo Peña, Full-Stack Engineer and AWS Infrastructure specialist">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Michael Remo Peña | Full-Stack Engineer &amp; AWS Infrastructure">
+    <meta name="twitter:description"
+        content="Production engineering across applications, data, AWS infrastructure, and operations.">
+    <meta name="twitter:image" content="https://michaelremz.github.io/assets/images/og-card.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Remo Peña",
+      "url": "https://michaelremz.github.io/",
+      "image": "https://michaelremz.github.io/assets/images/REMO%20PIC.jpg",
+      "jobTitle": "Full-Stack Engineer",
+      "address": { "@type": "PostalAddress", "addressRegion": "Pampanga", "addressCountry": "PH" },
+      "sameAs": [
+        "https://github.com/MichaelRemz",
+        "https://www.linkedin.com/in/michael-remo-pe%C3%B1a-a1101a356"
+      ],
+      "knowsAbout": ["Laravel", "PHP", "CodeIgniter", "MySQL", "REST APIs", "AWS Cloud Infrastructure", "Database Engineering", "Production Operations"]
+    }
+    </script>
+
+    <script>
+        try {
+            if (localStorage.getItem('portfolio-theme') === 'dark') {
+                document.documentElement.dataset.theme = 'dark';
+            }
+        } catch (error) { }
+    </script>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script defer src="assets/js/main.js"></script>
 </head>
 
-<body class="template-color-1 home-sticky spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
-    <div class="d-none d-xl-block">
-        <header class="rn-header-area d-flex align-items-start flex-column left-header-style">
-            <div class="logo-area">
-                <a href="#home">
-                    <img src="assets/images/REMO PIC.jpg" alt="Michael Remo Peña">
-                </a>
-            </div>
-            <nav id="sideNavs" class="mainmenu-nav navbar-example2 onepagenav">
-                <ul class="primary-menu nav nav-pills">
-                    <li class="nav-item current"><a class="nav-link smoth-animation-two" href="#home"><i
-                                data-feather="home"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation-two" href="#features"><i
-                                data-feather="briefcase"></i>Features</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation-two" href="#portfolio"><i
-                                data-feather="layers"></i>Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation-two" href="#resume"><i
-                                data-feather="users"></i>Resume</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation-two" href="#contacts"><i
-                                data-feather="message-circle"></i>Contact</a></li>
-                </ul>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-site-header>
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="Michael Remo Peña, home">
+                <img src="assets/images/remo-portrait.webp" alt="" width="44" height="44">
+                <span>
+                    <strong>Michael Remo Peña</strong>
+                    <small>Full-Stack Engineer</small>
+                </span>
+            </a>
+
+            <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-navigation
+                data-open="false">
+                <a href="#projects">Projects</a>
+                <a href="#ownership">Ownership</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#experience">Experience</a>
+                <a href="#profile">Profile</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <div class="footer">
-                <div class="social-share-style-1 mt--40">
-                    <span class="title">find with me</span>
-                    <ul class="social-share d-flex liststyle">
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/michael-remo-pe%C3%B1a-a1101a356" target="_blank" rel="noopener"><i
-                                    data-feather="linkedin"></i></a></li>
+
+            <div class="header-actions">
+                <button class="icon-button theme-toggle" type="button" data-theme-toggle
+                    aria-label="Switch to dark mode" title="Switch color theme">
+                    <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+                    </svg>
+                    <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path>
+                    </svg>
+                </button>
+                <a class="header-cta" href="mailto:michaelremopena@gmail.com">Let’s talk <span
+                        aria-hidden="true">↗</span></a>
+                <button class="icon-button menu-toggle" type="button" aria-label="Open navigation"
+                    aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path class="menu-line menu-line-top" d="M4 8h16"></path>
+                        <path class="menu-line menu-line-bottom" d="M4 16h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span></span> Full-stack engineering · AWS infrastructure</p>
+                    <h1 id="hero-title">I build production systems <em>end to end.</em></h1>
+                    <p class="hero-lede">From application code and databases to AWS infrastructure and production
+                        support, I own the work across every layer.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">Explore selected work <span
+                                aria-hidden="true">→</span></a>
+                        <a class="button button-secondary" href="mailto:michaelremopena@gmail.com">Contact me</a>
+                        <a class="text-link" href="#experience">View experience <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <ul class="tech-list" aria-label="Primary technologies">
+                        <li>Laravel</li><li>PHP</li><li>CodeIgniter</li><li>MySQL</li><li>REST APIs</li><li>AWS</li>
                     </ul>
                 </div>
+
+                <aside class="ownership-card" aria-label="End-to-end ownership overview">
+                    <div class="ownership-head"><span class="status-dot"></span><span>Production ownership</span><small>4+ years</small></div>
+                    <ol class="ownership-steps">
+                        <li><span>01</span><div><strong>Application</strong><small>Laravel/CodeIgniter · PHP · JavaScript</small></div></li>
+                        <li><span>02</span><div><strong>APIs &amp; integrations</strong><small>REST · connected systems</small></div></li>
+                        <li><span>03</span><div><strong>Data</strong><small>MySQL · procedures · migration</small></div></li>
+                        <li><span>04</span><div><strong>Cloud infrastructure</strong><small>AWS · networking · security</small></div></li>
+                        <li><span>05</span><div><strong>Production operations</strong><small>Deploy · monitor · troubleshoot</small></div></li>
+                    </ol>
+                    <p class="ownership-foot">One engineer. Every layer. Clear accountability.</p>
+                </aside>
             </div>
-        </header>
-    </div>
-    <div class="header-style-2 d-block d-xl-none">
-        <div class="row align-items-center">
-            <div class="col-8">
-                <div class="logo">
-                    <a href="#home">
-                        <img src="assets/images/REMO PIC.jpg" alt="Michael Remo Peña">
-                        <span>Michael Remo Peña</span>
-                    </a>
-                </div>
+
+            <div class="container proof-strip" aria-label="Selected engineering outcomes">
+                <div><strong>~2,000</strong><span>active employees supported</span></div>
+                <div><strong>~50%</strong><span>less manual encoding</span></div>
+                <div><strong>~90%</strong><span>less registry encoding</span></div>
+                <div><strong>4+</strong><span>years in production</span></div>
             </div>
-            <div class="col-4">
-                <div class="header-right text-end">
-                    <div class="hamberger-menu">
-                        <i id="menuBtn" class="feather-menu humberger-menu"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="popup-mobile-menu">
-        <div class="inner">
-            <div class="menu-top">
-                <div class="menu-header">
-                    <a class="logo" href="#home">
-                        <img src="assets/images/REMO PIC.jpg" alt="Michael Remo Peña">
-                    </a>
-                    <div class="close-button">
-                        <button class="close-menu-activation close"><i data-feather="x"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="content">
-                <ul class="primary-menu nav nav-pills onepagenav">
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <main class="page-wrapper-two">
-        <section id="home" class="slider-style-5 rn-section-gap pb--110 align-items-center with-particles">
-            <div id="particles-js"></div>
+        </section>
+
+        <section class="section projects-section" id="projects" aria-labelledby="projects-title">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="banner-inner">
-                            <div class="thumbnail gradient-border gradient-animation">
-                                <img id="border" class="gradient-border" src="assets/images/REMO PIC.jpg" alt="">
+                <header class="section-heading section-heading-split">
+                    <div><p class="section-kicker">Selected work / 01</p><h2 id="projects-title">Engineering work with real operational stakes.</h2></div>
+                    <p>These are sanitized case studies. They describe responsibilities and outcomes without exposing
+                        government data, internal URLs, credentials, or private production topology.</p>
+                </header>
+
+                <div class="projects-list">
+                    <details class="project-case" id="project-aws" open>
+                        <summary>
+                            <span class="project-number">01</span>
+                            <div class="project-summary-copy"><span class="project-type">AWS infrastructure · Production operations</span><h3>AWS Cloud Infrastructure for Government Digital Services</h3><p>Secure production environments supporting multiple public and internal information systems across compute, networking, data, delivery, and security.</p></div>
+                            <span class="project-signal">VPC · EC2 · RDS</span>
+                            <span class="case-action"><span data-case-label>Close case study</span><span aria-hidden="true">↘</span></span>
+                        </summary>
+                        <div class="project-detail">
+                            <div class="case-grid">
+                                <div class="case-facts">
+                                    <article><span>Context</span><p>Production government systems required controlled access, reliable hosting, clear network separation, recoverable databases, and secure public delivery.</p></article>
+                                    <article><span>My role</span><p>Provision, administer, secure, migrate, troubleshoot, and support the AWS environments these systems run on.</p></article>
+                                    <article><span>What I built</span><p>VPC environments with public/private subnets, Windows and Linux EC2 hosts, RDS for MySQL, S3, Route 53, Lambda, ALB/target groups, and CodeCommit.</p></article>
+                                    <article><span>Security &amp; reliability</span><p>IAM controls, security groups, WAF, Shield, GuardDuty, DNS and SSL/TLS administration, backups, restore work, and database migrations.</p></article>
+                                    <article><span>Engineering challenge</span><p>Coordinating live migrations and DNS cutovers while minimizing disruption and diagnosing issues that cross application, server, network, IAM, and database layers.</p></article>
+                                    <article><span>Outcome</span><p>Stable and recoverable production environments with clear operational ownership across the full hosting stack.</p></article>
+                                </div>
+                                <figure class="functional-flow infra-flow"><figcaption>Responsibility surface</figcaption><div class="flow-node flow-primary">Public delivery</div><span class="flow-arrow">↓</span><div class="flow-cluster"><span>Route 53</span><span>WAF</span><span>ALB</span></div><span class="flow-arrow">↓</span><div class="flow-cluster"><span>EC2</span><span>RDS MySQL</span><span>S3</span></div><span class="flow-arrow">↓</span><div class="flow-node">IAM · GuardDuty · Backups</div></figure>
                             </div>
-                            <h1>Michael Remo Peña</h1>
-                            <span class="cd-headline clip is-full-width">
-                                <span>I am a</span>
-                                <span class="cd-words-wrapper">
-                                    <b class="is-visible">Full Stack Developer.</b>
-                                    <b class="is-hidden">AWS Cloud Administrator.</b>
-                                    <b class="is-hidden">DevOps Administrator.</b>
-                                    <b class="is-hidden">Database Engineer.</b>
-                                    <b class="is-hidden">Automation Engineer.</b>
-                                </span>
-                            </span>
-                            <div class="hero-summary">
-                                <p>I'm a full stack developer and AWS cloud administrator who takes ideas from the
-                                    first conversation all the way to a secure, running product. I build the
-                                    applications, run the infrastructure they live on, and automate the busywork in
-                                    between, so the systems I deliver are reliable, scalable, and easy to live with.
-                                    I enjoy turning real-world problems into practical solutions and working closely
-                                    with the people who use them.</p>
-                            </div>
-                            <div class="button-area">
-                                <a class="rn-btn" href="#contacts"><span>CONTACT ME</span></a>
-                            </div>
+                            <ul class="project-tags" aria-label="Technologies used"><li>IAM</li><li>VPC</li><li>EC2</li><li>RDS MySQL</li><li>S3</li><li>Route 53</li><li>Lambda</li><li>ALB</li><li>WAF</li><li>Shield</li><li>GuardDuty</li><li>CodeCommit</li></ul>
                         </div>
-                    </div>
+                    </details>
+
+                    <details class="project-case" id="project-hris">
+                        <summary>
+                            <span class="project-number">02</span>
+                            <div class="project-summary-copy"><span class="project-type">Full-stack · Database engineering</span><h3>HRIS &amp; Attendance Management System</h3><p>A maintained production platform for employee records, attendance, schedules, leave, approvals, reporting, and connected HR workflows.</p></div>
+                            <span class="project-signal project-metric">~2,000 <small>active employees</small></span>
+                            <span class="case-action"><span data-case-label>Explore case study</span><span aria-hidden="true">↘</span></span>
+                        </summary>
+                        <div class="project-detail"><div class="case-grid compact-case"><div class="case-facts">
+                            <article><span>Context</span><p>A large workforce required dependable employee, attendance, schedule, leave, approval, and reporting workflows while legacy logic was modernized.</p></article>
+                            <article><span>My role</span><p>Application development, database design, REST API integration, legacy modernization, and production troubleshooting.</p></article>
+                            <article><span>Engineering challenge</span><p>Modeling complex work schedules and approval rules while protecting data accuracy and system responsiveness in daily production use.</p></article>
+                            <article><span>Outcome</span><p><strong>Approximately 2,000 active employees</strong> supported by a maintained production platform.</p></article>
+                        </div></div><ul class="project-tags" aria-label="Technologies used"><li>PHP</li><li>CodeIgniter</li><li>MySQL</li><li>JavaScript</li><li>REST APIs</li></ul></div>
+                    </details>
+
+                    <details class="project-case" id="project-database">
+                        <summary>
+                            <span class="project-number">03</span>
+                            <div class="project-summary-copy"><span class="project-type">Database engineering · Automation</span><h3>Database Integration &amp; Legacy System Automation</h3><p>MySQL-driven synchronization connecting legacy and modern systems while reducing duplicate encoding and protecting data integrity.</p></div>
+                            <span class="project-signal project-metric">~50% <small>less manual encoding</small></span>
+                            <span class="case-action"><span data-case-label>Explore case study</span><span aria-hidden="true">↘</span></span>
+                        </summary>
+                        <div class="project-detail"><div class="case-grid compact-case"><div class="case-facts">
+                            <article><span>Context</span><p>Data existed in legacy and modern systems, creating repeated manual entry and a greater risk of inconsistency.</p></article>
+                            <article><span>What I built</span><p>Stored procedures, triggers, and synchronization logic connecting the systems without requiring teams to re-encode the same information.</p></article>
+                            <article><span>Engineering challenge</span><p>Avoiding sync loops and conflicts, preserving transactional integrity, and introducing automation safely into production workflows.</p></article>
+                            <article><span>Outcome</span><p><strong>Approximately 50% less manual encoding</strong> through database synchronization and automation.</p></article>
+                        </div></div><ul class="project-tags" aria-label="Technologies used"><li>MySQL</li><li>Stored Procedures</li><li>Triggers</li><li>Data Synchronization</li><li>Database Migration</li></ul></div>
+                    </details>
+
+                    <details class="project-case" id="project-textract">
+                        <summary>
+                            <span class="project-number">04</span>
+                            <div class="project-summary-copy"><span class="project-type">Applied AWS · Document automation</span><h3>AWS Textract Document Processing Automation</h3><p>An application-integrated extraction and validation workflow that reduced manual encoding from scanned civil-registry documents.</p></div>
+                            <span class="project-signal project-metric">~90% <small>less encoding effort</small></span>
+                            <span class="case-action"><span data-case-label>Explore case study</span><span aria-hidden="true">↘</span></span>
+                        </summary>
+                        <div class="project-detail"><div class="case-grid compact-case"><div class="case-facts">
+                            <article><span>Context</span><p>Civil-registry information was manually transcribed from scanned documents—a slow process with avoidable encoding risk.</p></article>
+                            <article><span>What I built</span><p>A workflow using Amazon Textract to extract document content, validate the result, and integrate structured data into the application.</p></article>
+                            <article><span>Engineering challenge</span><p>Turning variable document extraction into a controlled application workflow with human validation where accuracy required it.</p></article>
+                            <article><span>Outcome</span><p><strong>Approximately 90% less manual civil-registry encoding effort</strong>, demonstrating applied AWS usage beyond infrastructure administration.</p></article>
+                        </div></div><ul class="project-tags" aria-label="Technologies used"><li>Amazon Textract</li><li>Document Extraction</li><li>Validation</li><li>Automation</li><li>Application Integration</li></ul></div>
+                    </details>
                 </div>
             </div>
         </section>
-        <div class="rn-service-area rn-section-gap section-separator" id="features">
+
+        <section class="section ownership-section" id="ownership" aria-labelledby="ownership-title">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-left">
-                            <span class="subtitle">Features</span>
-                            <h2 class="title">What I Do</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row--25 mt_md--10 mt_sm--10">
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon"><i data-feather="code"></i></div>
-                                <div class="content">
-                                    <h4 class="title"><a href="#">Web Apps Built End-to-End</a></h4>
-                                    <p class="description">I turn your ideas and business needs into working web
-                                        applications, handling everything from the first conversation to a live,
-                                        maintainable product, backed by a modern PHP, Python, and JavaScript stack.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon"><i data-feather="cloud"></i></div>
-                                <div class="content">
-                                    <h4 class="title"><a href="#">Cloud That Scales With You</a></h4>
-                                    <p class="description">I design, run, and migrate your cloud setup so your systems
-                                        stay fast, available, and ready to grow, with the heavy lifting of AWS
-                                        infrastructure handled for you behind the scenes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon"><i data-feather="database"></i></div>
-                                <div class="content">
-                                    <h4 class="title"><a href="#">Data You Can Rely On</a></h4>
-                                    <p class="description">I keep your data well-structured, fast, and safe, so reports
-                                        are accurate, systems stay responsive, and your information is always backed up
-                                        and recoverable when it matters.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon"><i data-feather="zap"></i></div>
-                                <div class="content">
-                                    <h4 class="title"><a href="#">Automation That Saves Time</a></h4>
-                                    <p class="description">I build automation that takes the repetitive, manual work off
-                                        your team's plate, so the same effort delivers more with fewer errors and faster
-                                        turnaround. The result is leaner operations and people freed up for higher-value
-                                        work.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon"><i data-feather="shield"></i></div>
-                                <div class="content">
-                                    <h4 class="title"><a href="#">Security Built In</a></h4>
-                                    <p class="description">I protect your systems and data with the right access
-                                        controls and monitoring in place, so you can operate with confidence and keep
-                                        your customers' trust.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-service">
-                            <div class="inner">
-                                <div class="icon"><i data-feather="life-buoy"></i></div>
-                                <div class="content">
-                                    <h4 class="title"><a href="#">Support You Can Count On</a></h4>
-                                    <p class="description">When something breaks, I'm the one who finds the root cause
-                                        and fixes it, keeping your systems running smoothly and your users productive
-                                        with responsive, hands-on support.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <header class="section-heading section-heading-split">
+                    <div><p class="section-kicker">Operating model / 02</p><h2 id="ownership-title">Ownership does not stop at the application boundary.</h2></div>
+                    <p>I can trace a production issue from the browser request through application code, integrations,
+                        data, servers, network controls, and cloud services—then stay with it through recovery.</p>
+                </header>
+                <ol class="lifecycle" aria-label="End-to-end engineering lifecycle">
+                    <li><span>01</span><strong>Application</strong><small>Features, workflows, maintenance</small></li>
+                    <li><span>02</span><strong>APIs</strong><small>Contracts, integrations, authentication</small></li>
+                    <li><span>03</span><strong>Database</strong><small>Schema, queries, procedures, migration</small></li>
+                    <li><span>04</span><strong>Servers</strong><small>Windows, Linux, Apache, Nginx</small></li>
+                    <li><span>05</span><strong>AWS &amp; network</strong><small>VPC, IAM, DNS, delivery, security</small></li>
+                    <li><span>06</span><strong>Production</strong><small>Deploy, monitor, troubleshoot, support</small></li>
+                </ol>
+                <div class="operations-panel">
+                    <div class="operations-copy"><p class="section-kicker light-kicker">Production troubleshooting</p><h3>One incident can cross five layers.</h3><p>Instead of handing a problem off at each boundary, I investigate the whole path and isolate the actual failure point.</p></div>
+                    <ol class="diagnostic-stack">
+                        <li><span>Application</span><small>errors · configuration · runtime</small></li>
+                        <li><span>Database</span><small>queries · locks · connections · data</small></li>
+                        <li><span>Server</span><small>services · logs · web server · SSL</small></li>
+                        <li><span>Network &amp; access</span><small>DNS · security groups · IAM</small></li>
+                        <li><span>AWS services</span><small>EC2 · RDS · ALB · storage</small></li>
+                    </ol>
                 </div>
             </div>
-        </div>
-        <div class="rn-portfolio-area rn-section-gap section-separator" id="portfolio">
+        </section>
+
+        <section class="section architecture-section" id="architecture" aria-labelledby="architecture-title">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="subtitle">My Projects</span>
-                            <h2 class="title">Portfolio</h2>
-                        </div>
-                    </div>
-                </div>
+                <header class="section-heading section-heading-split">
+                    <div><p class="section-kicker">Reference architecture / 03</p><h2 id="architecture-title">A credible, sanitized AWS delivery path.</h2></div>
+                    <p>This representative view demonstrates service relationships and public/private boundaries. It is intentionally not an exact production topology.</p>
+                </header>
+                <figure class="architecture-card">
+                    <svg class="architecture-svg" viewBox="0 0 1040 530" role="img" aria-labelledby="architecture-diagram-title architecture-diagram-description">
+                        <title id="architecture-diagram-title">Representative AWS web application architecture</title>
+                        <desc id="architecture-diagram-description">Internet traffic resolves through Route 53 and reaches an Application Load Balancer protected by WAF and Shield. The load balancer routes to EC2 application servers in a private application subnet, which use RDS MySQL in a private data subnet. IAM, GuardDuty, S3, Lambda, and backups support the environment.</desc>
+                        <defs><marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" class="diagram-arrowhead"></path></marker></defs>
+                        <rect class="diagram-canvas" x="1" y="1" width="1038" height="528" rx="24"></rect><text class="diagram-label" x="32" y="48">REQUEST PATH</text>
+                        <rect class="diagram-boundary" x="372" y="58" width="636" height="340" rx="22"></rect><text class="diagram-boundary-label" x="396" y="87">VPC · REPRESENTATIVE</text>
+                        <g class="diagram-node"><rect x="34" y="184" width="138" height="82" rx="15"></rect><text x="103" y="218" text-anchor="middle">Internet</text><text class="diagram-subtext" x="103" y="241" text-anchor="middle">HTTPS traffic</text></g>
+                        <line class="diagram-arrow" x1="172" y1="225" x2="205" y2="225" marker-end="url(#arrowhead)"></line>
+                        <g class="diagram-node"><rect x="214" y="184" width="128" height="82" rx="15"></rect><text x="278" y="218" text-anchor="middle">Route 53</text><text class="diagram-subtext" x="278" y="241" text-anchor="middle">DNS</text></g>
+                        <line class="diagram-arrow" x1="342" y1="225" x2="412" y2="225" marker-end="url(#arrowhead)"></line>
+                        <rect class="diagram-zone public-zone" x="400" y="112" width="174" height="238" rx="18"></rect><text class="diagram-zone-label" x="420" y="140">PUBLIC DELIVERY</text>
+                        <g class="diagram-badge"><rect x="419" y="158" width="136" height="35" rx="17"></rect><text x="487" y="181" text-anchor="middle">WAF · Shield</text></g><line class="diagram-association" x1="487" y1="193" x2="487" y2="209"></line>
+                        <g class="diagram-node accent-node"><rect x="419" y="211" width="136" height="80" rx="15"></rect><text x="487" y="244" text-anchor="middle">Application LB</text><text class="diagram-subtext" x="487" y="267" text-anchor="middle">Target groups</text></g>
+                        <line class="diagram-arrow" x1="555" y1="251" x2="627" y2="251" marker-end="url(#arrowhead)"></line><rect class="diagram-zone private-zone" x="615" y="112" width="174" height="238" rx="18"></rect><text class="diagram-zone-label" x="635" y="140">PRIVATE APP</text>
+                        <g class="diagram-node"><rect x="634" y="211" width="136" height="80" rx="15"></rect><text x="702" y="244" text-anchor="middle">EC2 servers</text><text class="diagram-subtext" x="702" y="267" text-anchor="middle">Windows · Linux</text></g>
+                        <line class="diagram-arrow" x1="770" y1="251" x2="842" y2="251" marker-end="url(#arrowhead)"></line><rect class="diagram-zone data-zone" x="830" y="112" width="154" height="238" rx="18"></rect><text class="diagram-zone-label" x="850" y="140">PRIVATE DATA</text>
+                        <g class="diagram-node data-node"><rect x="849" y="211" width="116" height="80" rx="15"></rect><text x="907" y="244" text-anchor="middle">RDS MySQL</text><text class="diagram-subtext" x="907" y="267" text-anchor="middle">Data layer</text></g>
+                        <text class="diagram-label" x="32" y="438">MANAGED SERVICES &amp; CONTROLS</text><g class="diagram-support"><rect x="32" y="456" width="976" height="48" rx="14"></rect><text x="110" y="486" text-anchor="middle">IAM</text><circle cx="190" cy="480" r="2"></circle><text x="278" y="486" text-anchor="middle">GuardDuty</text><circle cx="374" cy="480" r="2"></circle><text x="446" y="486" text-anchor="middle">S3</text><circle cx="522" cy="480" r="2"></circle><text x="605" y="486" text-anchor="middle">Lambda</text><circle cx="690" cy="480" r="2"></circle><text x="786" y="486" text-anchor="middle">Backups</text><circle cx="872" cy="480" r="2"></circle><text x="940" y="486" text-anchor="middle">SSL/TLS</text></g>
+                    </svg>
+                    <div class="architecture-mobile" aria-hidden="true"><div>Internet <small>HTTPS</small></div><span>↓</span><div>Route 53 <small>DNS</small></div><span>↓</span><div>WAF + Shield <small>Associated protection</small></div><span>↓</span><div>Application Load Balancer <small>Public delivery · target groups</small></div><span>↓</span><div>EC2 application servers <small>Private application subnet</small></div><span>↓</span><div>RDS MySQL <small>Private data subnet</small></div></div>
+                    <figcaption><strong>Representative architecture only.</strong> Supporting controls and managed services operate across the environment; placement here is conceptual, not a claim about an exact production account.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-                <div class="row">
-                    <div class="col-lg-12 mt--40">
-                        <div class="section-title text-left">
-                            <h4 class="title">Applications &amp; Development</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/portfolio/portfolio-01.jpg" alt="Freelance Shopify Development">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="javascript:void(0)">Freelance Development</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title"><a href="javascript:void(0)">Shopify Store Development <i
-                                                class="feather-arrow-up-right"></i></a></h4>
-                                    <p class="description">Custom Shopify storefronts. I handle theme customization and store
-                                        setup so each brand gets an online shop that looks right and sells well.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/portfolio/portfolio-02.jpg" alt="Freelance System Development">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="javascript:void(0)">Freelance Development</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title"><a href="javascript:void(0)">Freelance System Development <i
-                                                class="feather-arrow-up-right"></i></a></h4>
-                                    <p class="description">Custom systems built for clients, from POS and
-                                        inventory management to tailored business tools. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/portfolio/portfolio-03.jpg" alt="LGU Information Systems">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <div class="category-info">
-                                        <div class="category-list">
-                                            <a href="javascript:void(0)">Government / LGU</a>
-                                        </div>
-                                    </div>
-                                    <h4 class="title"><a href="javascript:void(0)">LGU Information Systems <i
-                                                class="feather-arrow-up-right"></i></a></h4>
-                                    <p class="description">Internal systems developed and maintained for
-                                        local government operations across several departments. Full-cycle development, day-to-day management,
-                                        and ongoing enhancements for systems relied on every day.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 mt--50">
-                        <div class="section-title text-left">
-                            <h4 class="title">Cloud &amp; Infrastructure</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
-                    <div class="col-lg-12 mt--40">
-                        <div class="cloud-spotlight">
-                            <div class="cloud-spotlight-head">
-                                <div class="category-list">
-                                    <a href="javascript:void(0)">End-to-End AWS Ownership</a>
-                                </div>
-                                <h4 class="title">Full AWS Infrastructure Administration</h4>
-                                <p class="lead">I fully manage our organization's AWS infrastructure end-to-end &mdash; from
-                                    architecture and development through deployment, security, data, and automation.
-                                    I design the networking, stand up and migrate environments, harden the security
-                                    posture, administer the databases, and automate the operations that keep
-                                    production stable.</p>
-                            </div>
-
-                            <div class="cloud-pillars">
-                                <div class="cloud-pillar">
-                                    <div class="icon"><i data-feather="git-merge"></i></div>
-                                    <h5>Architecture &amp; Networking</h5>
-                                    <p>VPC design with public/private subnet segmentation, routing, and security
-                                        boundaries for production workloads.</p>
-                                </div>
-                                <div class="cloud-pillar">
-                                    <div class="icon"><i data-feather="server"></i></div>
-                                    <h5>Compute &amp; Deployment</h5>
-                                    <p>EC2 (Windows &amp; Ubuntu) provisioning, standardized staging/production
-                                        hosting, ALB/Target Groups, and Route 53 DNS cutovers during migrations.</p>
-                                </div>
-                                <div class="cloud-pillar">
-                                    <div class="icon"><i data-feather="shield"></i></div>
-                                    <h5>Security &amp; Governance</h5>
-                                    <p>WAF, security groups, and GuardDuty monitoring, with IAM roles and policies
-                                        enforcing least-privilege access per system and team.</p>
-                                </div>
-                                <div class="cloud-pillar">
-                                    <div class="icon"><i data-feather="database"></i></div>
-                                    <h5>Data &amp; Reliability</h5>
-                                    <p>MySQL RDS administration, automated backups with retention, restore drills,
-                                        and cloud-to-on-prem synchronization for hybrid continuity.</p>
-                                </div>
-                                <div class="cloud-pillar">
-                                    <div class="icon"><i data-feather="zap"></i></div>
-                                    <h5>Automation &amp; Applied AI</h5>
-                                    <p>Lambda-driven scheduled operations and an AWS Textract OCR pipeline that
-                                        extracts and validates structured data from scanned records.</p>
-                                </div>
-                                <div class="cloud-pillar">
-                                    <div class="icon"><i data-feather="git-branch"></i></div>
-                                    <h5>DevOps &amp; Delivery</h5>
-                                    <p>Repository workflows on AWS CodeCommit with controlled, low-downtime
-                                        releases across staging and production environments.</p>
-                                </div>
-                            </div>
-
-                            <div class="cloud-outcomes">
-                                <div class="outcome">
-                                    <span class="num">~90%</span>
-                                    <span class="label">Civil registry encoding reduced via Textract OCR
-                                        extraction &amp; validation</span>
-                                </div>
-                                <div class="outcome">
-                                    <span class="num">~50%</span>
-                                    <span class="label">Manual encoding reduced via MySQL trigger/procedure
-                                        legacy-to-new sync</span>
-                                </div>
-                                <div class="outcome">
-                                    <span class="num">~2,000</span>
-                                    <span class="label">Active employees supported on systems running this
-                                        infrastructure</span>
-                                </div>
-                            </div>
-
-                            <div class="cloud-stack">
-                                <span class="stack-label">Stack</span>
-                                <div class="tech-tags">
-                                    <span>VPC</span>
-                                    <span>EC2</span>
-                                    <span>ALB</span>
-                                    <span>Target Groups</span>
-                                    <span>Route 53</span>
-                                    <span>S3</span>
-                                    <span>Lambda</span>
-                                    <span>RDS (MySQL)</span>
-                                    <span>WAF</span>
-                                    <span>GuardDuty</span>
-                                    <span>IAM</span>
-                                    <span>Textract</span>
-                                    <span>CodeCommit</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section class="section expertise-section" id="expertise" aria-labelledby="expertise-title">
+            <div class="container">
+                <header class="section-heading section-heading-split"><div><p class="section-kicker">Core capabilities / 04</p><h2 id="expertise-title">Four connected engineering disciplines.</h2></div><p>My value is not a wall of tools. It is the ability to connect these disciplines in a working production system.</p></header>
+                <div class="capability-grid">
+                    <article class="capability-card"><span class="capability-number">01</span><h3>Full-Stack Engineering</h3><p>Build and maintain production applications, workflows, interfaces, APIs, and integrations.</p><ul><li>PHP</li><li>Laravel</li><li>CodeIgniter</li><li>JavaScript</li><li>REST APIs</li><li>HTML/CSS</li></ul></article>
+                    <article class="capability-card"><span class="capability-number">02</span><h3>AWS Cloud Infrastructure</h3><p>Provision, secure, migrate, operate, and troubleshoot the cloud environments behind applications.</p><ul><li>IAM</li><li>VPC</li><li>EC2</li><li>RDS</li><li>S3</li><li>Route 53</li><li>Lambda</li><li>ALB</li><li>WAF</li><li>GuardDuty</li></ul></article>
+                    <article class="capability-card"><span class="capability-number">03</span><h3>Database Engineering</h3><p>Design and operate MySQL data layers, migration paths, synchronization, and database automation.</p><ul><li>MySQL</li><li>SQL</li><li>Schema Design</li><li>Stored Procedures</li><li>Triggers</li><li>Migration</li><li>Backups</li></ul></article>
+                    <article class="capability-card"><span class="capability-number">04</span><h3>Production Operations</h3><p>Deploy, monitor, diagnose, and support applications across the server, network, data, and cloud stack.</p><ul><li>Linux</li><li>Windows Server</li><li>Apache</li><li>Nginx</li><li>Git</li><li>DNS</li><li>SSL/TLS</li><li>Production Support</li></ul></article>
                 </div>
             </div>
-        </div>
-        <div class="rn-resume-area rn-section-gap section-separator" id="resume">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="subtitle">4+ Years of Experience</span>
-                            <h2 class="title">Resume</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--45">
-                    <div class="col-lg-12">
-                        <div class="personal-experience-inner mt--40">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 col-12">
-                                    <div class="content">
-                                        <span class="subtitle">2014 - Present</span>
-                                        <h4 class="maintitle">Education</h4>
-                                        <div class="experience-list">
-                                            <div class="resume-single-list">
-                                                <div class="inner">
-                                                    <div class="heading">
-                                                        <div class="title">
-                                                            <h4>Master of Information Systems</h4>
-                                                            <span>University of the Philippines Open University (2025 -
-                                                                Present)</span>
-                                                        </div>
-                                                    </div>
-                                                    <p class="description">Currently pursuing advanced studies in
-                                                        information systems.</p>
-                                                </div>
-                                            </div>
-                                            <div class="resume-single-list">
-                                                <div class="inner">
-                                                    <div class="heading">
-                                                        <div class="title">
-                                                            <h4>Bachelor of Science in Information Technology</h4>
-                                                            <span>City College of San Fernando, Pampanga (2014 -
-                                                                2018)</span>
-                                                        </div>
-                                                    </div>
-                                                    <p class="description">Completed undergraduate degree in Information
-                                                        Technology.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60">
-                                    <div class="content">
-                                        <span class="subtitle">2021 - Present</span>
-                                        <h4 class="maintitle">Experience</h4>
-                                        <div class="experience-list">
-                                            <div class="resume-single-list">
-                                                <div class="inner">
-                                                    <div class="heading">
-                                                        <div class="title">
-                                                            <h4>Computer Programmer I / Full Stack Developer &amp; AWS Cloud Administrator</h4>
-                                                            <span>City Information and Communications Technology Office
-                                                                (CICTO), LGU – City of San Fernando, Pampanga (July 2021 - Present)</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description">
-                                                        <p>Full Stack Developer and AWS Cloud/DevOps Administrator
-                                                            delivering and operating production web applications
-                                                            end-to-end, while leading organization-wide cloud
-                                                            administration and migrations.</p>
-                                                        <ul>
-                                                            <li>Designed, developed, and maintained internal web systems
-                                                                for HR, market operations, civil registry, health
-                                                                management, and internal controls.</li>
-                                                            <li>Supported and improved an HRIS serving ~2,000 active
-                                                                employees, focusing on reliability and data integrity.</li>
-                                                            <li>Built REST APIs to integrate applications
-                                                                and streamline cross-department workflows.</li>
-                                                            <li>Implemented automated legacy-to-new sync using MySQL
-                                                                stored procedures and triggers, cutting manual encoding
-                                                                by ~50%.</li>
-                                                            <li>Reduced civil registry encoding by ~90% with an AWS
-                                                                Textract extraction and validation pipeline.</li>
-                                                            <li>Provided Level 1/2 technical support, incident triage,
-                                                                and coordinated escalation through to resolution.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="resume-single-list">
-                                                <div class="inner">
-                                                    <div class="heading">
-                                                        <div class="title">
-                                                            <h4>AWS / Cloud Administration (Organization-wide)</h4>
-                                                            <span>Web Systems &amp; Migrations</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="description">
-                                                        <ul>
-                                                            <li>Designed AWS VPC networking with public/private subnet
-                                                                segmentation, routing, and security boundaries.</li>
-                                                            <li>Provisioned and managed EC2 (Windows &amp; Ubuntu) with
-                                                                standardized staging and production environments.</li>
-                                                            <li>Configured ALB/Target Groups and managed Route 53 DNS
-                                                                for environment routing and migration cutovers.</li>
-                                                            <li>Implemented WAF, security groups, and GuardDuty
-                                                                monitoring; owned IAM roles for least-privilege access.</li>
-                                                            <li>Administered MySQL RDS with automated backups, retention
-                                                                controls, restore drills, and hybrid on-prem sync.</li>
-                                                            <li>Built Lambda automation for scheduled tasks and
-                                                                established repository workflows with AWS CodeCommit.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row certification-list">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="subtitle">Certifications &amp; Training</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12 mt--30">
-                        <div class="resume-single-list">
-                            <div class="inner">
-                                <div class="heading">
-                                    <div class="title">
-                                        <h4>AWS Cloud Practitioner</h4>
-                                        <span>Inventive Media</span>
-                                    </div>
-                                </div>
-                                <span class="cert-meta">Certificate of Completion · Apr 27–28, 2024</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12 mt--30">
-                        <div class="resume-single-list">
-                            <div class="inner">
-                                <div class="heading">
-                                    <div class="title">
-                                        <h4>Windows Server 2016: Identity with Windows Server</h4>
-                                        <span>Inventive Media</span>
-                                    </div>
-                                </div>
-                                <span class="cert-meta">Certificate of Completion · Oct 22–23, 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12 mt--30">
-                        <div class="resume-single-list">
-                            <div class="inner">
-                                <div class="heading">
-                                    <div class="title">
-                                        <h4>Project Development &amp; Implementation using Python-Django (64 hrs)</h4>
-                                        <span>City HRMO / City College of San Fernando</span>
-                                    </div>
-                                </div>
-                                <span class="cert-meta">Apr 27–Jun 24, 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12 mt--30">
-                        <div class="resume-single-list">
-                            <div class="inner">
-                                <div class="heading">
-                                    <div class="title">
-                                        <h4>Fiber Optics Workshop (Splicing / Termination / Test Equipment)</h4>
-                                        <span>Converge University</span>
-                                    </div>
-                                </div>
-                                <span class="cert-meta">Feb 28–Mar 2, 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="rn-contact-area rn-section-gap section-separator" id="contacts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="subtitle">Contact</span>
-                            <h2 class="title">Contact Me</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--50 mt_md--40 mt_sm--40 mt-contact-sm">
-                    <div class="col-lg-5">
-                        <div class="contact-about-area">
-                            <div class="thumbnail">
-                                <img src="assets/images/contact/contact1.png" alt="contact">
-                            </div>
-                            <div class="title-area">
-                                <h4 class="title">Michael Remo Peña</h4>
-                                <span>Full Stack Developer | AWS Cloud / DevOps Administrator</span>
-                            </div>
-                            <div class="description">
-                                <p>Available for full-stack development and AWS cloud / DevOps work.</p>
-                                <span class="phone">Location: City of San Fernando, Pampanga, PH</span>
-                                <span class="phone">Phone: <a href="tel:+639321886860">+63 932 1886 860</a></span>
-                                <span class="mail">Email: <a
-                                        href="mailto:michaelremopena@gmail.com">michaelremopena@gmail.com</a></span>
-                            </div>
-                        </div>
-                    </div>
+        </section>
 
+        <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <header class="section-heading section-heading-split"><div><p class="section-kicker">Experience / 05</p><h2 id="experience-title">Engineering in a production government environment.</h2></div><p>My official role is preserved below. The scope describes the engineering responsibilities I carry in practice.</p></header>
+                <article class="experience-card">
+                    <div class="experience-meta"><span class="role-label">Official position</span><h3>Computer Programmer I</h3><p>City Information and Communications Technology Office (CICTO)</p><p>City Government of San Fernando, Pampanga</p><time datetime="2021-07">July 2021</time> — Present</div>
+                    <div class="experience-scope"><p class="scope-lede">Functioning across full-stack development, AWS infrastructure, database engineering, and production operations for digital government systems.</p><ul><li><span>01</span>Develop and maintain applications using PHP, Laravel, CodeIgniter, JavaScript, and MySQL.</li><li><span>02</span>Build and integrate REST APIs across multiple government systems.</li><li><span>03</span>Administer AWS compute, networking, database, storage, DNS, delivery, and security services.</li><li><span>04</span>Design schemas, procedures, triggers, migrations, and synchronization workflows.</li><li><span>05</span>Deploy and support production systems across application, database, server, networking, IAM, DNS, and SSL/TLS layers.</li></ul></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section profile-section" id="profile" aria-labelledby="profile-title">
+            <div class="container profile-grid">
+                <div class="profile-copy"><p class="section-kicker">Engineering profile / 06</p><h2 id="profile-title">A software engineer who understands where the software runs.</h2><p>I am a Full-Stack Software Engineer with hands-on experience building, deploying, and operating production digital government systems—from application development and database engineering to AWS infrastructure and production operations.</p><p>That broader operating context helps me design applications that are easier to deploy, diagnose, secure, recover, and support after launch.</p><div class="profile-identity"><img src="assets/images/remo-portrait.webp" width="112" height="112" alt="Portrait of Michael Remo Peña" loading="lazy"><div><strong>Michael Remo Peña</strong><span>Pampanga, Philippines</span><small>Full-Stack Engineer · AWS Infrastructure</small></div></div></div>
+                <div class="credentials">
+                    <section class="credential-group" aria-labelledby="education-title"><p class="credential-kicker">Education</p><h3 id="education-title">Formal study</h3><article><span class="credential-status">In progress</span><h4>Master of Information Systems</h4><p>University of the Philippines Open University</p><time>2025–Present · Expected 2027</time></article><article><h4>Bachelor of Science in Information Technology</h4><p>City College of San Fernando, Pampanga</p><time>2014–2018</time></article></section>
+                    <section class="credential-group" aria-labelledby="training-title"><p class="credential-kicker">Training</p><h3 id="training-title">Technical development</h3><p class="credential-note">Course-completion training—not vendor certification exams.</p><article><h4>AWS Cloud Practitioner</h4><p>Inventive Media · Certificate of Completion</p><time>April 27–28, 2024</time></article><article><h4>Windows Server 2016: Identity with Windows Server</h4><p>Inventive Media · Certificate of Completion</p><time>October 22–23, 2022</time></article><article><h4>Project Development using Python-Django</h4><p>City HRMO / City College of San Fernando · 64 hours</p><time>April–June 2022</time></article><article><h4>Fiber Optics Workshop</h4><p>Converge University · Splicing, termination, and test equipment</p><time>February 28–March 2, 2023</time></article></section>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section freelance-section" aria-labelledby="freelance-title">
+            <div class="container freelance-layout"><header><p class="section-kicker">Additional work</p><h2 id="freelance-title">Practical systems for smaller businesses.</h2></header><div class="freelance-list"><article><span>01</span><div><h3>Custom Business Systems</h3><p>Purpose-built web systems fitted to real operating processes.</p></div></article><article><span>02</span><div><h3>POS &amp; Inventory</h3><p>Transaction and stock-management tools for retail operations.</p></div></article><article><span>03</span><div><h3>Shopify Development</h3><p>Storefront and theme customization for small businesses.</p></div></article></div></div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-grid"><div><p class="section-kicker light-kicker">Contact / 07</p><h2 id="contact-title">Need an engineer who can own the whole path?</h2></div><div class="contact-copy"><p>I’m open to full-stack, backend, and AWS infrastructure opportunities where production ownership matters.</p><a class="contact-email" href="mailto:michaelremopena@gmail.com">michaelremopena@gmail.com <span aria-hidden="true">↗</span></a><nav class="social-links" aria-label="Professional profiles"><a href="https://www.linkedin.com/in/michael-remo-pe%C3%B1a-a1101a356" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/MichaelRemz" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><span>Pampanga, Philippines</span></nav></div></div>
+        </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/modernizer.min.js"></script>
-    <script src="assets/js/vendor/feather.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.js"></script>
-    <script src="assets/js/vendor/text-type.js"></script>
-    <script src="assets/js/vendor/wow.js"></script>
-    <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
-    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        particlesJS('particles-js', {
-            "particles": {
-                "number": { "value": 20, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": ["#ffffff"] },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.8, "random": true },
-                "size": { "value": 4, "random": true },
-                "line_linked": { "enable": false },
-                "move": { "enable": true, "speed": 6, "direction": "none", "out_mode": "out" }
-            },
-            "interactivity": {
-                "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } },
-                "modes": { "repulse": { "distance": 200 }, "push": { "particles_nb": 4 } }
-            }
-        });
-    </script>
-</body>
 
+    <footer class="site-footer"><div class="container footer-inner"><p>© <span data-current-year>2026</span> Michael Remo Peña</p><p>Designed around end-to-end ownership.</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+</body>
 </html>
